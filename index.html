@@ -10,12 +10,15 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"> 
+    
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/contact.css">
     
 </head>
 <body>
@@ -32,7 +35,7 @@
 
             </a>
             <ul class="menu">
-              <li><a href="#home" class="selected">INICIO</a></li>
+              <li><a href="#home" class="active">INICIO</a></li>
               <li><a href="#about">ACERCA</a></li>
               <li><a href="#skills">SERVICIOS</a></li>
               <li><a href="#portfolio">PORTAFOLIO</a></li>
@@ -60,6 +63,7 @@
     </section>
 
     <section class="skills" id="skills">
+        <div>
         <h2 class="skills-title">SERVICIOS</h2>
         <ul class="skills-list">
           <li class="skills-skill">Illustrator</li>
@@ -68,6 +72,114 @@
           <li class="skills-skill">after Effects</li>
           <li class="skills-skill">Premiere Pro</li>
         </ul>
+    </div>
     </section>
+
+    <section class="portfolio" id="portfolio">
+        <div>
+        <h2 class="portfolio-title">PORTAFOLIO</h2>
+        <a href="#">
+            <figure>
+                <img src="img/batman.jpg">
+                <div class="capa">
+                    <h3>Animación de Gráficos</h3>
+                    <h4> Dic 2022 </h4>
+                    <p>Desarrollo de animación producido en Affter Effects</p>
+                    <a href="https://www.youtube.com/watch?v=oLky8Uyw9Gg"
+                        target="_blank"
+                    >ver video</a>
+                </div>
+            </figure>
+            <figure>
+                <img src="img/paranoia.jpg">
+                <div class="capa">
+                    <h3>Video Cortometraje</h3>
+                    <h4>Nov 2021</h4>
+                    <p>PostProducción de cortometraje desarrollado en Premiere Pro ''Paranoia''</p>
+                    <a href="https://www.youtube.com/watch?v=FjniNtgwk2k"
+                        target="_blank"
+                    >ver video</a>
+                </div>
+            </figure>
+            <figure>
+                <img src="img/duele.jpg">
+                <div class="capa">
+                    <h3>Video Musical</h3>
+                    <h4> Dic 2021</h4>
+                    <p>PostProducción de video musical desarrollado en Premiere Pro ''Duele'' de Simpson Ahuevo</p>
+                    <a href="https://www.youtube.com/watch?v=_jz9NgzA-b0"
+                        target="_blank"
+                    >ver video</a>
+                </div>
+            </figure>
+            <figure>
+                <img src="img/audifonos.jpg">
+                <div class="capa">
+                    <h3>Render 3D</h3>
+                    <h4> Dic 2021</h4>
+                    <p>Creación de elemento gráfico en 3D desarrollado en Blender</p>
+                </div>
+            </figure>
+        </a>
+    </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="contact-title">CONTACTO</h2>
+        <div class="contact-details">
+          <div class="contact-details-group">
+            <p class="contact-label">Dirección:</p>
+            <p class="contact-text">Tijuana, Baja California</p>
+          </div>
+          <div class="contact-details-group">
+            <p class="contact-label">Email:</p>
+            <p class="contact-text">jp.graficosau@gmail.com</p>
+          </div>
+          <div class="contact-details-group">
+            <p class="contact-text">
+              Deje su mensaje y con gusto le responderé
+            </p>
+          </div>
+        </div>
+        <form class="contact-form">
+          <div class="contact-form-group">
+            <label for="name">Nombre</label>
+            <input required type="text" name="name" id="name" />
+          </div>
+          <div class="contact-form-group">
+            <label for="email">Email</label>
+            <input required type="email" name="email" id="email" />
+          </div>
+          <div class="contact-form-group">
+            <label for="message">Mensaje</label>
+            <textarea required name="message" id="message" rows="6"></textarea>
+          </div>
+
+          <button type="submit" class="contact-form-submit">Enviar</button>
+        </form>
+        <nav class="social">
+          <ul class="social-list">
+            <li>
+              <a href="https://www.behance.net/jonathanperez76" target="_blank">
+                <img src="img/behance-1.svg" alt="behance profile" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/jp.dmotion/" target="_blank" class="social-link"
+                ><img src="img/instagram-seeklogo.com.svg" alt="youtube profile"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/jonathan-perez-00b8a2275/" target="_blank"
+                class="social-link">
+                <img src="img/linkedin.svg" alt="linkedin profile" />
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+</div>
+
 </body>
 </html>
